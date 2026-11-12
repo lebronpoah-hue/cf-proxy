@@ -41,7 +41,7 @@ function getSearchRedirectUrl(query, engine) {
   }
 
   const destination = String(payload.url || '');
-  const match = /^https://([^/?#]+)(?:[/?#]|$)/i.exec(destination);
+  const match = new RegExp('^https://([^/?#]+)(?:[/?#]|$)', 'i').exec(destination);
   const allowedHosts = [
     'google.com', 'www.google.com',
     'bing.com', 'www.bing.com',
