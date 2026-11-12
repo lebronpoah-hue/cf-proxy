@@ -13,7 +13,7 @@ A small Cloudflare Worker API for the attached games page. The page keeps its ex
 1. Install dependencies with npm install.
 2. Run locally with npm run start.
 3. Sign in with Wrangler using npx wrangler login.
-4. Deploy with npm run deploy. The current package script runs Wrangler publish.
+4. Deploy with npm run deploy. The package script runs Wrangler deploy.
 5. Copy the deployed Worker URL ending in workers.dev.
 
 ## Connect the Apps Script frontend
